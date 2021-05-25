@@ -1,4 +1,4 @@
-﻿# Hexo Configuration
+# Hexo Configuration
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
@@ -6,14 +6,14 @@
 title: 福尔摩斯姚  ## 网站标题
 subtitle: 专注于搞事情的一个老清新~  ## 网站副标题
 description: 博客 | web开发 | 福尔摩斯姚 | ## 网站描述
-author: 976776565@qq.com ## 您的名字，作者
+author: y976776565@gmail.com ## 您的名字，作者
 language: zh-Hans ## 网站使用的语言
 timezone:  ## 网站时区。Hexo 预设使用您电脑的时区
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 ##如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 ##root 设为 /blog/。
-url: https://yszblog.vip  ## 网址
+url: https://rabbit.kim  ## 网址
 root: / ## 网站根目录
 permalink: :year/:month/:day/:title/ ## 文章的 永久链接格式
 permalink_defaults:  ## 永久链接中各部分的默认值 
