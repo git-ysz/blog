@@ -11,4 +11,6 @@ git config user.email "y976776565@gmail.com" # 这里改成自己的 Github 邮�
 # add commit timestamp
 git add . 
 git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
-git push --force --quiet "https://${api}@${GH_REF}" master:master # github_token 改成你在 Travis CI 中添加的环境变量名称
+# api 改成你在 Travis CI 中添加的环境变量名称
+# 获取 https://github.com/settings/tokens
+git push --force --quiet "https://${api}@${GH_REF}" master:master
