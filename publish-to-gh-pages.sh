@@ -6,9 +6,9 @@ git checkout master
 cd ../
 mv .deploy_git/.git/ ./public/
 cd ./public
-git config user.name  "git-ysz" # ÕâÀï¸Ä³É×Ô¼ºµÄ Github ÓÃ»§Ãû
-git config user.email "976776565@qq.com" # ÕâÀï¸Ä³É×Ô¼ºµÄ Github ÓÊÏä
+git config user.name  "git-ysz" # è¿™é‡Œæ”¹æˆè‡ªå·±çš„ Github ç”¨æˆ·å
+git config user.email "y976776565@gmail.com" # è¿™é‡Œæ”¹æˆè‡ªå·±çš„ Github é‚®ç®±
 # add commit timestamp
 git add . 
 git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
-git push --force --quiet "https://${api}@${GH_REF}" master:master # github_token ¸Ä³ÉÄãÔÚ Travis CI ÖĞÌí¼ÓµÄ»·¾³±äÁ¿Ãû³Æ
+git push --force --quiet "https://${api}@${GH_REF}" master:master # github_token æ”¹æˆä½ åœ¨ Travis CI ä¸­æ·»åŠ çš„ç¯å¢ƒå˜é‡åç§°
