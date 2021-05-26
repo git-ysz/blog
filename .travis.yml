@@ -1,23 +1,20 @@
-language: node_js # ÉèÖÃÓïÑÔ
-node_js: stable # ÉèÖÃÏàÓ¦°æ±¾
+language: node_js # è®¾ç½®è¯­è¨€
+node_js: stable # è®¾ç½®ç›¸åº”ç‰ˆæœ¬
 cache:
     apt: true
     directories:
-        - node_modules # »º´æ²»¾­³£¸ü¸ÄµÄÄÚÈİ
+        - node_modules # ç¼“å­˜ä¸ç»å¸¸æ›´æ”¹çš„å†…å®¹
 before_install:
-    - export TZ='Asia/Shanghai' # ¸ü¸ÄÊ±Çø
+    - export TZ='Asia/Shanghai' # æ›´æ”¹æ—¶åŒº
     - npm install hexo-cli -g
-    - chmod +x ./publish-to-gh-pages.sh  # ÎªshellÎÄ¼şÌí¼Ó¿ÉÖ´ĞĞÈ¨ÏŞ
+    - chmod +x ./publish-to-gh-pages.sh  # ä¸ºshellæ–‡ä»¶æ·»åŠ å¯æ‰§è¡Œæƒé™
 install:
-    - npm install # °²×°hexo¼°²å¼ş
+    - npm install # å®‰è£…hexoåŠæ’ä»¶
 script:
-    - hexo clean # Çå³ı
-    - hexo g # Éú³É
+    - hexo clean # æ¸…é™¤
+    - hexo g # ç”Ÿæˆ
 after_script:
     - ./publish-to-gh-pages.sh
 branches:
     only:
-        - hexo # Ö»¼à²âhexo·ÖÖ§
-env:
-    global:
-        - GH_REF: github.com/git-ysz/blog.git # ÉèÖÃGH_REF ×¢Òâ¸ü¸Ä³É×Ô¼ºµÄ²Ö¿âµØÖ·
+        - hexo # åªç›‘æµ‹hexoåˆ†æ”¯
