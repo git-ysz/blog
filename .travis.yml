@@ -1,5 +1,5 @@
 language: node_js # 设置语言
-node_js: 12 # 设置相应版本
+node_js: 12 # 设置相应版本，不能使用最新版本，build生成的文件会有问题
 cache:
     apt: true
     directories:
@@ -7,21 +7,21 @@ cache:
 before_install:
     - export TZ='Asia/Shanghai' # 更改时区
     - npm install hexo-cli -g
-#     - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
+    - chmod +x ./publish-to-gh-pages.sh  # 为shell文件添加可执行权限
 install:
     - npm install # 安装hexo及插件
 script:
     - hexo clean # 清除
     - hexo g # 生成
 after_script:
-#     - ./publish-to-gh-pages.sh
-    - cd ./public
-    - git init
-    - git config user.name  "git-ysz" # 这里改成自己的 Github 用户名
-    - git config user.email "y976776565@gmail.com" # 这里改成自己的 Github 邮箱
-    - git add . 
-    - git commit -m "Travis CI Auto Builder"
-    - git push --force --quiet "https://${api}@${GH_REF}" master:master
+    - ./publish-to-gh-pages.sh
+#     - cd ./public
+#     - git init
+#     - git config user.name  "git-ysz" # 这里改成自己的 Github 用户名
+#     - git config user.email "y976776565@gmail.com" # 这里改成自己的 Github 邮箱
+#     - git add . 
+#     - git commit -m "Travis CI Auto Builder"
+#     - git push --force --quiet "https://${api}@${GH_REF}" master:master
 branches:
     only:
         - hexo # 只监测hexo分支
