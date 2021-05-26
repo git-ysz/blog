@@ -79,8 +79,7 @@ baidusitemap:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy: ##部署
   type: git
-#   repo: 
-#     coding: git@github.com:git-ysz/blog.git
+  repo: git@github.com:git-ysz/blog.git
   branch: 
     coding: hexo
 
