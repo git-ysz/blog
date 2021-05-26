@@ -124,7 +124,7 @@ social:
   #Twitter: https://twitter.com/cyj228 || twitter
   Weibo: https://weibo.com/u/6217656290 || weibo
   #Facebook: https://www.facebook.com/cyj228 || facebook
-  E-Mail: mailto:976776565@qq.com || envelope
+  E-Mail: mailto:y976776565@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -537,8 +537,8 @@ rating:
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
   enable: true
-  app_id: hkfpr8VsiaL4zm0iCL38bgg9-gzGzoHsz
-  app_key: EU85H8id1pOvqFoDceKgXEL6
+  app_id: CmyVD5qLoQVcCFaV1JmfdGsG-gzGzoHsz
+  app_key: mphuBlAqckyjD5KsgWEQtxRx
 
 # Another tool to show number of visitors to each article.
 # visit https://console.firebase.google.com/u/0/ to get apiKey and projectId
