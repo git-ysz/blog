@@ -13,4 +13,4 @@ git add .
 git commit -m "Travis CI Auto Builder at `date +"%Y-%m-%d %H:%M"`"
 # api 改成你在 Travis CI 中添加的环境变量名称
 # 获取 https://github.com/settings/tokens
-git push --force --quiet "git@github.com:${TRAVIS_REPO_SLUG}.git" master:master
+git push --force --quiet "https://${api}@${GH_REF}" master:master
