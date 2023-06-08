@@ -13,7 +13,7 @@ timezone:  ## 网站时区。Hexo 预设使用您电脑的时区
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 ##如果您的网站存放在子目录中，例如 http://yoursite.com/blog，则请将您的 url 设为 http://yoursite.com/blog 并把 ##root 设为 /blog/。
-url: https://rabbit.kim  ## 网址
+url: https://yaoshuzhuang.xyz  ## 网址
 root: / ## 网站根目录
 permalink: :year/:month/:day/:title/ ## 文章的 永久链接格式
 permalink_defaults:  ## 永久链接中各部分的默认值 
