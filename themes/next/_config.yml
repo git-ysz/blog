@@ -412,7 +412,7 @@ gitment:
   lazy: false # Comments lazy loading with a button
   cleanly: true # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: yszblog # MUST HAVE, Your Github ID，用户名
+  github_user: git-ysz # MUST HAVE, Your Github ID，用户名
   github_repo: comments # MUST HAVE, The repo you use to store Gitment comments,仓库名
   client_id: e60cf18dcd88dfe77e96 # MUST HAVE, Github client id for the Gitment
   client_secret: 94767e5c361c11d732e7e1551007ed1fc07ebafe # EITHER this or proxy_gateway, Github access secret token for the Gitment
